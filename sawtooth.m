@@ -26,11 +26,11 @@ if nargin == 1,
 end
 
 % Check the input data type. Single precision is not supported.
-try
-    chkinputdatatype(t,width);
-catch ME
-    throwAsCaller(ME);
-end
+%try
+%    chkinputdatatype(t,width);
+%catch ME
+%    throwAsCaller(ME);
+%end
   
 if (width > 1) || (width < 0),
     error(message('signal:sawtooth:InvalidRange'))
