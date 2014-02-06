@@ -25,11 +25,11 @@ if nargin < 2
 end
 
 % Check the input data type. Single precision is not supported.
-try
-    chkinputdatatype(t,duty);
-catch ME
-    throwAsCaller(ME);
-end
+%try
+%    chkinputdatatype(t,duty);
+%catch ME
+%    throwAsCaller(ME);
+%end
 
 if any(size(duty)~=1),
 	error(message('signal:square:SignalErr'))
