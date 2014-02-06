@@ -33,7 +33,8 @@ if (strcmpi(type,'triangle'))
 end
 (analogFrequency-c)./d;
 if (strcmpi(type,'square'))
-    y = square(x)+1;
+    %y = square(x)+1;
+    y = sin(x) +sin(3*x)/3 + sin(5*x)/5;
 end
 
 if (strcmpi(type,'sawtooth'))
